@@ -1,0 +1,8 @@
+
+.credit {
+  text-align: center;
+  color: var(--first-color);
+  padding-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
