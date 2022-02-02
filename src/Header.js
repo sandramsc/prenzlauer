@@ -1,13 +1,14 @@
 import React from 'react';
 import './Header.css';
+import SearchIcon from '@mui/icons-material/Search';
 import logo from './images/header_logo.png';
 
 function Header() {
   return <div className="header"> 
-  <img className="header_logo" src= { logo }/>
-  <div className="header_search">
-  <input className="header_searchInput" type="text"/>
-  {/* Logo */}
+  <img className="header_logo" src= { logo } />
+  <div className="header_search" >
+  <input className="header_searchInput" type="text" />
+  <SearchIcon className="header_searchIcon" />
   </div>
 
   <div className="header_nav">
