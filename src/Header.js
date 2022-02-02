@@ -10,7 +10,34 @@ function Header() {
   {/* Logo */}
   </div>
 
-  <div className="header_nav"></div>
+  <div className="header_nav">
+  <div className="header_option">
+    <span className="header_optionLineOne">
+    Hello Guest
+    </span>
+    <span className="header_optionLineTwo">
+    Sign In
+    </span>
+  </div>
+
+  <div className="header_option">
+    <span className="header_optionLineOne">
+    Hello Guest
+    </span>
+    <span className="header_optionLineTwo">
+    Sign In
+    </span>
+  </div>
+
+  <div className="header_option">
+    <span className="header_optionLineOne">
+    Hello Guest
+    </span>
+    <span className="header_optionLineTwo">
+    Sign In
+    </span>
+  </div>
+  </div>
   </div>;
 }
 
