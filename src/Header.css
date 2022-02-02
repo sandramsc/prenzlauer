@@ -40,6 +40,15 @@
     justify-content: space-evenly;
 }
 
+.header_optionLineOne {
+    font-size: 11.5px;
+}
+
+.header_optionLineTwo {
+    font-size: 13px;
+    font-weight: 700;
+}
+
 .header_option {
     display: flex;
     flex-direction: column;
