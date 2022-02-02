@@ -1,4 +1,4 @@
-
+import Header from './Header';
 import './App.css';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     //BEM naming convention
     <div className="app">
     <h1>Amazon clone project</h1>
-    {/* Header */}
+    < Header />
     {/* Home */}
     </div>
   );

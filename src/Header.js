@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.css',
-import './images/header_logo'
+import './Header.css';
+import logo from './images/header_logo.png';
 
 function Header() {
   return <div className="header"> 
-  <img className="header_logo" scr="./images/header_logo"/>
+  <img className="header_logo" src= { logo }/>
   <div className="header_search">
   <input className="header_searchInput" type="text"/>
   {/* Logo */}
@@ -22,19 +22,19 @@ function Header() {
 
   <div className="header_option">
     <span className="header_optionLineOne">
-    Hello Guest
+    Retruns
     </span>
     <span className="header_optionLineTwo">
-    Sign In
+    & Orders
     </span>
   </div>
 
   <div className="header_option">
     <span className="header_optionLineOne">
-    Hello Guest
+    Your
     </span>
     <span className="header_optionLineTwo">
-    Sign In
+    Prime
     </span>
   </div>
   </div>
