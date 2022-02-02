@@ -17,6 +17,12 @@
 
 }
 
+.header_optionBasket {
+    display:flex;
+    align-items: center;
+    color: white;
+}
+
 .header_search {
     display: flex;
     flex: 1;
