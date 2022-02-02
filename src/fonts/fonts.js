@@ -1,3 +1,4 @@
+/* Designed & coded by Sandra Ashipala 03.02.2022 <https://github.com/sajustsmile> */
 import { createGlobalStyle } from 'styled-components';
 
 import OfficinaSans from './ITC-Officina-Sans-Std-Book-Font.otf';
