@@ -15,19 +15,11 @@ function Home() {
         <div className='home_container'>
             <img className='home_image' src={headerBanner} alt='' />
             <div className='home_row'>
-                <Product 
-                    id='1234'
-                    title='The Lean Startup: How Constant Innovation 
-                        Creates Radically Successful Businesses PaperBack' 
-                    price={11.99} 
-                    image={imgOne}
-                    rating={3}                        
-                        />   
-                 <Product 
-                    id='5678'
-                    title='Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl' 
-                    price={356.59} 
-                    image={imgTwo}
+            <Product 
+                    id='1617'
+                    title="Samsung LC49RG90SSUXEN 24' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440" 
+                    price={1105.99} 
+                    image={imgSix}
                     rating={5}                        
                         /> 
             </div>
@@ -55,11 +47,19 @@ function Home() {
                         /> 
             </div>
             <div className='home_row'>
-            <Product 
-                    id='1617'
-                    title="Samsung LC49RG90SSUXEN 24' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440" 
-                    price={1105.99} 
-                    image={imgSix}
+                <Product 
+                    id='1234'
+                    title='The Lean Startup: How Constant Innovation 
+                        Creates Radically Successful Businesses PaperBack' 
+                    price={11.99} 
+                    image={imgOne}
+                    rating={3}                        
+                        />   
+                 <Product 
+                    id='5678'
+                    title='Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl' 
+                    price={356.59} 
+                    image={imgTwo}
                     rating={5}                        
                         /> 
             </div>
