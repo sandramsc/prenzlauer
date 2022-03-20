@@ -10,15 +10,15 @@ function Home() {
             <img className='home_image' src={headerBanner} alt='' />
             <div className='home_row'>
                 <Product />
-                {/* Poduct */}
+                <Product />
             </div>
             <div className='home_row'>
-                {/* Poduct */}
-                {/* Poduct */}
-                {/* Poduct */}
+                <Product />
+                <Product />
+                <Product />
             </div>
             <div className='home_row'>
-                {/* Poduct */}
+                <Product />
             </div>
         </div>
     </div>
