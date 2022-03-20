@@ -4,10 +4,13 @@ import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import logo from './images/header_logo.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return <div className="header"> 
+      <Link to='/'>
       <img className="header_logo" src= { logo } alt='' />
+      </Link> 
       <div className="header_search" >
       <input className="header_searchInput" type="text" />
       <SearchIcon className="header_searchIcon" />
