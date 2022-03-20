@@ -7,7 +7,7 @@ import logo from './images/header_logo.png';
 
 function Header() {
   return <div className="header"> 
-      <img className="header_logo" src= { logo } />
+      <img className="header_logo" src= { logo } alt='' />
       <div className="header_search" >
       <input className="header_searchInput" type="text" />
       <SearchIcon className="header_searchIcon" />
