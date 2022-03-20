@@ -1,12 +1,25 @@
 import React from 'react';
 import './Home.css';
 import headerBanner from './images/header_banner.jpg';
+import Product from './Product';
 
 function Home() {
   return (
     <div className='home'>
-         <div className='home_container'>
-        <img className='home_image' src={headerBanner} alt='' />
+        <div className='home_container'>
+            <img className='home_image' src={headerBanner} alt='' />
+            <div className='home_row'>
+                <Product />
+                {/* Poduct */}
+            </div>
+            <div className='home_row'>
+                {/* Poduct */}
+                {/* Poduct */}
+                {/* Poduct */}
+            </div>
+            <div className='home_row'>
+                {/* Poduct */}
+            </div>
         </div>
     </div>
   )
