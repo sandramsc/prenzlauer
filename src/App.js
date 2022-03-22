@@ -2,6 +2,7 @@
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
+import Login from './Login';
 import GlobalFonts from './fonts/fonts';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -11,16 +12,17 @@ function App() {
     //BEM naming convention
     <Router>
       <div className="app">
-      <Header />
         <Switch>
         <Route path="/login">
-           <h1>Login</h1>
+          <Login />
            </Route>
         <Route path="/checkout">
+            <Header />
             <Checkout />
             <GlobalFonts />
           </Route>
           <Route path="/">
+            <Header />
             <Home />
             <GlobalFonts />
           </Route>
