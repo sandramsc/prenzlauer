@@ -1,3 +1,4 @@
+/* Designed & coded by Sandra Ashipala 20.03.2022 <https://github.com/sajustsmile> */
 import React from 'react';
 import './Product.css'
 
