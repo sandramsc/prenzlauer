@@ -13,6 +13,9 @@ function App() {
       <div className="app">
       <Header />
         <Switch>
+        <Route path="/login">
+           <h1>Login</h1>
+           </Route>
         <Route path="/checkout">
             <Checkout />
             <GlobalFonts />

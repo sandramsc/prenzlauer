@@ -24,14 +24,15 @@ function Checkout() {
               image={item.image}y
               />
           ))}
+
+            {/* checkOut */}
+          {/*checkOut  */}
+          {/*checkOut */}
+          {/* checkOut */}
           </div>
       </div>
       <div className='checkout_right'>
           <Subtotal />
-          {/* checkOut */}
-          {/*checkOut  */}
-          {/*checkOut */}
-          {/* checkOut */}
         
       </div>
   </div>
