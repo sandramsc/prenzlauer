@@ -1,4 +1,5 @@
 /* Designed & coded by Sandra Ashipala 03.02.2022 <https://github.com/sajustsmile> */
+import React from 'react';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';

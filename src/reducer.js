@@ -4,7 +4,7 @@ export const initialState = {
 };
 //selector (adding sub-total)
 export const  getBasketTotal = (basket) => 
-    basket?.reduce((amount, item) =>
+    basket.reduce((amount, item) =>
     item.price + amount, 0);
 
 const reducer = (state, action) => {

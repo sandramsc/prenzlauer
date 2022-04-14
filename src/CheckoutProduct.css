@@ -10,12 +10,13 @@
 }
 
 .checkoutProduct_info > button {
-  background: #f0c14b;
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
   border-radius: 2px;
+  background: linear-gradient(to bottom, #f8d479 0%, #f0c14b 100%) repeat scroll
+    0 0 rgba(0, 0, 0, 0);
 }
 
 .checkoutProduct_image {
