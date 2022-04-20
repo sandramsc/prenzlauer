@@ -1,4 +1,3 @@
-/* Designed & coded by Sandra Ashipala 03.02.2022 <https://github.com/sajustsmile> */
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";

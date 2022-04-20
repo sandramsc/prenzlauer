@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
 import './Login.css';
 import loginLogo from './images/login_logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { auth } from './firebase';
 
 function Login() {
+    const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const signIn = e => {
         e.preventDefault()
+
+        auth
+        .signInWithEmailAndPassword(email, password)
+        .then(auth => {
+            history.push('/')
+        })
+        .catch(error => alert(error.message))
     }
 
     const register = e => {
@@ -18,6 +26,9 @@ function Login() {
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
                 console.log(auth);
+                if (auth){
+                    history.push('/')
+                }
             })
             .catch(error => alert(error.message))
     }
@@ -32,11 +43,11 @@ function Login() {
             <h1>Sign-in</h1>
             <form>
                 <h5>E-mail</h5>
-                <input type='text' value={email} onClick={
+                <input type='text' value={email} onChange={
                     e=> setEmail(e.target.value)}/>
 
                 <h5>Password</h5>
-                <input type='password' value={password} onClick={
+                <input type='password' value={password} onChange={
                     e => setPassword(e.target.value)}/>
                 <button type='submit' onClick={signIn} className='login_signInButton'>Sign In</button>
             </form>
