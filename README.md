@@ -17,7 +17,6 @@ a clone of the multinational technology company - Amazon.
 - [Application Description](#application-description)
 - [Table of Contents](#table-of-contents)
 - [Project Demo](#demo)
-- [Screenshots](#screenshots)
 - [Technology Stack](#technology-stack)
 - [Features](#features)
 - [How to use the app](#how-to-use-the-app)
@@ -26,8 +25,6 @@ a clone of the multinational technology company - Amazon.
 </details>
 
 ## Project Demo
-
-View the Demo on [YouTube](https://youtu.be/_jF15xo0tH0)
 
 Explore the [App](https://prenzlauer-fad3c.web.app/)
 
