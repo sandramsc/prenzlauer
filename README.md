@@ -7,7 +7,7 @@
 
 ## Application Description
 
-a clone of the multinational technology company - Amazon
+a clone of the e-commerce platform - Amazon
 
 ## Table of Contents
 
