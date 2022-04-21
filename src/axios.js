@@ -2,8 +2,8 @@
 import axios from 'axios';
 
 const instance = axios.create ({
-    //API (cloud function) URL
-    baseURL: '...'
+    //API (cloud function -- firebase emulators) URL
+    baseURL: 'http://localhost:5001/prenzlauer-fad3c/us-central1/api'
 })
 
 export default instance;

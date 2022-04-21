@@ -8,8 +8,8 @@ import Login from './Login';
 import GlobalFonts from './fonts/fonts';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { auth } from "./firebase";
-import {useStateValue} from "./StateProvider";
+import { auth } from './firebase';
+import {useStateValue} from './StateProvider';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 

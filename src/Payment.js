@@ -38,6 +38,7 @@ useEffect(() => {
 }, [basket])
 
 const handleSubmit = async (event) => {
+    // do all the fancy stripe stuff...
     event.preventDefault();
     setProcessing(true);
 
@@ -46,19 +47,21 @@ const handleSubmit = async (event) => {
             card: elements.getElement(CardElement)
         }
     }).then(({ paymentIntent }) => {
-        //paymentIntent = payment confirmation
+        // paymentIntent = payment confirmation
 
         setSucceeded(true);
-        setError(false);
+        setError(null)
         setProcessing(false)
 
-        history.replaceState('/orders')
+    
+        history.replace('/orders')
     })
 
 }
 
 const handleChange = event => {
-    //listens for chnages in CardElement
+    // Listen for changes in the CardElement
+    // and display any errors as the customer types their card details
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
 }
@@ -74,7 +77,7 @@ const handleChange = event => {
                     <h3>Delivery Address</h3>
                 </div>
                 <div className='payment_address'>
-                   {/* <p>{user.email}</p> */}
+                   <p>{user.email}</p>
                    <p>264 Prenzlauer Alle</p>
                    <p>Berlin, Germany</p>
                 </div>
@@ -82,7 +85,7 @@ const handleChange = event => {
             {/* payment section -review*/}
             <div className='payment_section'>
             <div className='payment_title'>
-                    <h3>Review Items & Delivery</h3>
+                <h3>Review Items & Delivery</h3>
                 </div>
                 <div className='payment_items'>
                  {basket.map(item => (
@@ -104,27 +107,23 @@ const handleChange = event => {
                 <div className='payment_details'>
                  {/* StripeAPI */}
                  <form onSubmit={handleSubmit}>
-                     <CardElement onChange={handleChange}/>
-                     <div className='payment_priceContainer'>
-                     {/* sums up basket total */}   
-                     <CurrencyFormat
-                        renderText={(value) =>(
-                            <h3>Order Total: {value}</h3>
-                        )}
-                        decimalScale={2}
-                        value={getBasketTotal(basket)}
-                        displayType={'text'}
-                        thousandSeparator={true}
-                        prefix={'€'}
-                        />
-                        <button disabled={processing || disabled
-                            || succeeded}>
-                            <span>{processing ? <p>Processing</p> : 'Buy Now'}</span>
-                            </button>
-                     </div>
-                     {/* Error */}
-                     {error && <div>{error}</div>}
-                 </form>
+              <CardElement onChange={handleChange} />
+              <div className="payment__priceContainer">
+                <CurrencyFormat
+                  renderText={(value) => <h3>Order Total: {value} </h3>}
+                  decimalScale={2}
+                  value={getBasketTotal(basket)}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"€"}
+                />
+                <button disabled={processing || disabled || succeeded}>
+                  <span>{processing ? <p>Processing</p> : "Buy Now"} </span>
+                </button>
+              </div>
+              {/* Errors */}
+              {error && <div>{error} </div>}
+            </form>
                 </div>
                 </div>
         </div>
@@ -132,4 +131,4 @@ const handleChange = event => {
   )
 }
 
-export default Payment
+export default Payment;
