@@ -7,7 +7,7 @@
 
 ## Application Description
 
-a clone of the multinational technology company - Amazon.
+a clone of the multinational technology company - Amazon
 
 ## Table of Contents
 
@@ -27,8 +27,6 @@ a clone of the multinational technology company - Amazon.
 ## Project Demo
 
 Explore the [App](https://prenzlauer-fad3c.web.app/)
-
-## Screenshots
 
 ## Technology Stack
 
@@ -52,10 +50,6 @@ $ git clone https://github.com/sajustsmile/prenzlauer.git
 ```
 
 **Step #2**
-
-```
-cd client
-```
 
 - Install dependencies via npm or yarn: _npm i_ OR _yarn_
 

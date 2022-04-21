@@ -48,6 +48,11 @@ function App() {
             <Checkout />
             <GlobalFonts />
           </Route>
+          <Route path="/payment">
+            <Header />
+            <h1>payment page</h1>
+            <GlobalFonts />
+          </Route>
           <Route path="/">
             <Header />
             <Home />
