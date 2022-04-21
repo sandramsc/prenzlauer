@@ -1,18 +1,20 @@
 /* Designed & coded by Sandra Ashipala 20.04.2022 <https://github.com/sajustsmile> */
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css';
 import { useStateValue } from './StateProvider';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import CurrencyFormat from 'react-currency-format';
 import { useElements, CardElement, useStripe } from '@stripe/react-stripe-js';
 import { getBasketTotal } from './reducer';
+import axios from './axios';
 
 function Payment() {
 //pull in user email from the data layer
 const [{basket, user}, dispatch] = useStateValue();
 const stripe = useStripe();
 const elements = useElements();
+const history = useHistory();
 
 const [error, setError] = useState(null);
 const [disabled, setDisabled] = useState(true);
@@ -24,15 +26,34 @@ useEffect(() => {
     //strpe secret that allows tocharge a customer
     const getClientSecret = async () => {
         //axios allows to make requestsi.e post/get
-        const response = await axios
+        const response = await axios({
+            method: 'post',
+            //API call powered by axios
+            //stripe expects the total in a currencies sub-currency (changes it into cents)
+            url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+        });
+        setClientSecret(response.data.clientSecret)
     }
+    getClientSecret();
 }, [basket])
 
 const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
 
-    //const payload = await stripe
+    const payload = await stripe.confirmCardPayment(clientSecret, {
+        payment_method: {
+            card: elements.getElement(CardElement)
+        }
+    }).then(({ paymentIntent }) => {
+        //paymentIntent = payment confirmation
+
+        setSucceeded(true);
+        setError(false);
+        setProcessing(false)
+
+        history.replaceState('/orders')
+    })
 
 }
 
