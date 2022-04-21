@@ -25,11 +25,6 @@ function Checkout() {
               image={item.image}
               />
           ))}
-
-            {/* checkOut */}
-          {/*checkOut  */}
-          {/*checkOut */}
-          {/* checkOut */}
           </div>
       </div>
       <div className='checkout_right'>

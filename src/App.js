@@ -3,6 +3,7 @@ import React, {useEffect}from 'react';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
+import Payment from './Payment';
 import Login from './Login';
 import GlobalFonts from './fonts/fonts';
 import './App.css';
@@ -50,7 +51,7 @@ function App() {
           </Route>
           <Route path="/payment">
             <Header />
-            <h1>payment page</h1>
+            <Payment />
             <GlobalFonts />
           </Route>
           <Route path="/">
