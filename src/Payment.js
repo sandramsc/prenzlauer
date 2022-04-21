@@ -53,7 +53,9 @@ const handleSubmit = async (event) => {
         setError(null)
         setProcessing(false)
 
-    
+        dispatch({
+            type: 'EMPTY_BASKET'
+        })
         history.replace('/orders')
     })
 
@@ -77,7 +79,7 @@ const handleChange = event => {
                     <h3>Delivery Address</h3>
                 </div>
                 <div className='payment_address'>
-                   <p>{user.email}</p>
+                   {/*<p>{user?.email}</p> */}
                    <p>264 Prenzlauer Alle</p>
                    <p>Berlin, Germany</p>
                 </div>
@@ -117,7 +119,7 @@ const handleChange = event => {
                   thousandSeparator={true}
                   prefix={"€"}
                 />
-                <button disabled={processing || disabled || succeeded}>
+                <button className='payment_btn' disabled={processing || disabled || succeeded}>
                   <span>{processing ? <p>Processing</p> : "Buy Now"} </span>
                 </button>
               </div>
