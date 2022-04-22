@@ -1,4 +1,4 @@
-/* Designed & coded by Sandra Ashipala 20.03.2022 <https://github.com/sajustsmile> */
+/* Designed & coded by Sandra Ashipala 20.03.2022 <https://github.com/sandramsc> */
 import React from 'react';
 import './Checkout.css';
 import Subtotal from './Subtotal';
