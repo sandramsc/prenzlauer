@@ -1,4 +1,4 @@
-/* Designed & coded by Sandra Ashipala 03.02.2022 <https://github.com/sajustsmile> */
+/* Designed & coded by Sandra Ashipala 03.02.2022 <https://github.com/sandramsc> */
 import React, {useEffect} from 'react';
 import Header from './Header';
 import Home from './Home';
