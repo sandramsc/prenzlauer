@@ -46,7 +46,7 @@ Explore the [App](https://prenzlauer-fad3c.web.app/)
 **Step #1** - Clone the project
 
 ```bash
-$ git clone https://github.com/sajustsmile/prenzlauer.git
+$ git clone https://github.com/sandramsc/prenzlauer.git
 ```
 
 **Step #2**
@@ -57,4 +57,4 @@ $ git clone https://github.com/sajustsmile/prenzlauer.git
 
 ## License
 
-[![GitLicense](https://img.shields.io/badge/License-Apache-magenta.svg)](https://github.com/sajustsmile/prenzlauer/blob/main/LICENSE)
+[![GitLicense](https://img.shields.io/badge/License-Apache-magenta.svg)](https://github.com/sandramsc/prenzlauer/blob/main/LICENSE)
