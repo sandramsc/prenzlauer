@@ -34,7 +34,7 @@ Explore the [App](https://prenzlauer-fad3c.web.app/)
 | ---------- | ----------------------------------------------------------------- |
 | Firebase   | a platform for creating mobile and web applications               |
 | React.js   | javaScript library                                                |
-| Stripe API | example API methods include sending invoices, accepting payments |
+| Stripe API | example API methods include sending invoices & accepting payments |
 
 ## Features
 
