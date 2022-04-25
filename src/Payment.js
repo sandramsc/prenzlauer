@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 /* Designed & coded by Sandra Ashipala 20.04.2022 <https://github.com/sajustsmile> */
 import React, { useState, useEffect } from 'react';
+=======
+/* Designed & coded by Sandra Ashipala 20.04.2022 <https://github.com/sandramsc> */
+import React, {useState, useEffect} from 'react';
+import CheckoutProduct from './CheckoutProduct';
+>>>>>>> d95051041286607c9d23803dee101fe9d3924554
 import './Payment.css';
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
