@@ -30,16 +30,21 @@ Explore the [App](https://prenzlauer-fad3c.web.app/)
 
 ## Technology Stack
 
-| Technology | Description                                         |
-| ---------- | --------------------------------------------------- |
-| Firebase   | a platform for creating mobile and web applications |
-| React.js   | javaScript library                                  |
+| Technology | Description                                                       |
+| ---------- | ----------------------------------------------------------------- |
+| Firebase   | a platform for creating mobile and web applications               |
+| React.js   | javaScript library                                                |
+| Stripe API | example API methods include sending invoices, accepting payments, |
 
 ## Features
 
 1. User athentication (login/logout/create account)
 
 2. Add items to cart / Remove items from cart
+
+3. 'Buy Items' with credit card
+
+4. View orders
 
 ## How to use the app
 

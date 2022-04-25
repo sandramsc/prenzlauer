@@ -35,3 +35,6 @@ app.post("/payments/create", async (request, response) => {
 
 // - Listen command
 exports.api = functions.https.onRequest(app);
+
+// - Blaze Plan to deploy functions
+// - Example endpoint --> http://localhost:5001/prenzlauer-fad3c/us-central1/api
