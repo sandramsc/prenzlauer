@@ -46,7 +46,7 @@ Explore the [App](https://prenzlauer-fad3c.web.app/)
 **Step #1** - Clone the project
 
 ```bash
-$ git clone https://github.com/sajustsmile/prenzlauer.git
+$ git clone https://github.com/sandramsc/prenzlauer.git
 ```
 
 **Step #2**
@@ -55,6 +55,10 @@ $ git clone https://github.com/sajustsmile/prenzlauer.git
 
 - Website: To start it, run _npm start_ OR _yarn start_
 
+- For checkout: enter any stripe prop credit card number i.e 4242 4242 4242 4242 12/28/4242
+
+- View your orders at: http://localhost:3000/orders
+
 ## License
 
-[![GitLicense](https://img.shields.io/badge/License-Apache-magenta.svg)](https://github.com/sajustsmile/prenzlauer/blob/main/LICENSE)
+[![GitLicense](https://img.shields.io/badge/License-Apache-magenta.svg)](https://github.com/sandramsc/prenzlauer/blob/main/LICENSE)
