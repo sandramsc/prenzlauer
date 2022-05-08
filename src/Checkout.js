@@ -1,7 +1,6 @@
 /* Designed & coded by Sandra Ashipala 20.03.2022 <https://github.com/sandramsc> */
 import React from 'react';
 import './Checkout.css';
-/* Designed & coded by Sandra Ashipala 03.02.2022 <https://github.com/sandramsc> */
 import Subtotal from './Subtotal';
 import "./Checkout.css";
 import checkoutAd from './images/checkout_ad.jpg';
